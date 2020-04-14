@@ -2,7 +2,7 @@ package com.codegym;
 
 public class TestThread extends Thread {
     @Override
-    public void run() {
+    public synchronized void run() {
         for (int i = 0; i < 5; i++) {
             System.out.println(this.getName() + " " + i);
             try {
